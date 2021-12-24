@@ -11,6 +11,7 @@ import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Proxy;
 
 /**
+ * 3.基于接口实现转账的动态代理
  * 产生SimpleAccountServiceImpi的代理对象:JDK代理
  * 被代理类SimpleAccountServiceImpl至少需要实现一个接口
  */
