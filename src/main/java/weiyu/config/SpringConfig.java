@@ -28,6 +28,13 @@ public class SpringConfig {
     private String username;
     @Value("${jdbc.pass}")
     private  String password;
+    //@Value("${jdbc.initialSize}")
+    //private  Integer initialSize;
+    //@Value("${jdbc.maxActive}")
+    //private  Integer maxActive;
+    //@Value("${jdbc.maxWait}")
+    //private  Integer maxWait;
+
 
 
     /**

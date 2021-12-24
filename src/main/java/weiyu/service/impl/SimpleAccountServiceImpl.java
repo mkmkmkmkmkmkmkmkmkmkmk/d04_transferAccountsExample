@@ -8,11 +8,8 @@ import weiyu.pojo.Account;
 import weiyu.service.AccountService;
 
 /**
- * @Author：Weiyu
- * @Version:
- * @Since:
- * @date：2021-12-24_周五 14:08
- **/
+ * 事务控制一般都是控制在业务层。
+ */
 @Service
 public class SimpleAccountServiceImpl implements AccountService {
     @Autowired
