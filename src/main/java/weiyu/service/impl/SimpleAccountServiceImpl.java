@@ -1,9 +1,11 @@
 package weiyu.service.impl;
 
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Qualifier;
 import weiyu.dao.AccountDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import weiyu.dao.impl.SimpleAccountDaoImpl;
 import weiyu.pojo.Account;
 import weiyu.service.AccountService;
 
@@ -13,7 +15,7 @@ import weiyu.service.AccountService;
 @Service
 public class SimpleAccountServiceImpl implements AccountService {
     @Autowired
-    private AccountDao accountDao;
+    private SimpleAccountDaoImpl accountDao;
 
 
     @Override

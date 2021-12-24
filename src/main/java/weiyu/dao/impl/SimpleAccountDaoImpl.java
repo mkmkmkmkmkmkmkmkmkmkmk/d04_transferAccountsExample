@@ -10,11 +10,11 @@ import weiyu.pojo.Account;
 import java.sql.SQLException;
 
 /**
- * @Author：Weiyu
- * @Version:
- * @Since:
- * @date：2021-12-24_周五 14:23
- **/
+ * 1.
+ * QueryRunner ( Datasource ds) ;
+ * query (String sql) {ds.getCOnnectin. . . . .conn.close()}
+ * update (Stirng sql) {ds.getCOnnectin. . . . .conn.close() }
+ */
 @Repository
 public class SimpleAccountDaoImpl implements AccountDao {
     @Autowired
@@ -45,4 +45,5 @@ public class SimpleAccountDaoImpl implements AccountDao {
             throw new RuntimeException("更新余额失败"+e);
         }
     }
+
 }

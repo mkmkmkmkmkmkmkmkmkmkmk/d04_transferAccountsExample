@@ -12,5 +12,5 @@ public interface AccountDao {
 
     Account findByAccountNumber(String sourceAccountNumber);
 
-    void updateAccountBalence(weiyu.pojo.Account sAccount);
+    void updateAccountBalence(Account account);
 }

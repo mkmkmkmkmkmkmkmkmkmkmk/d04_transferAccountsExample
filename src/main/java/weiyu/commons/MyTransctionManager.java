@@ -1,5 +1,8 @@
 package weiyu.commons;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 import javax.sql.DataSource;
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -7,9 +10,11 @@ import java.sql.SQLException;
 /**
  * 自定义的事务管理器
  */
-
+@Component
 public class MyTransctionManager {
+    @Autowired
     private SimpleThreadLocal threadLocal;
+    @Autowired
     private DataSource dataSource;
 
     /**
