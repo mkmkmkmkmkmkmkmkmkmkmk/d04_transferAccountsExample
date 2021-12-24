@@ -2,6 +2,7 @@ import org.junit.After;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import weiyu.config.SpringConfig;
@@ -20,7 +21,7 @@ public class SimpleAccountTest {
     @Autowired
     private SimpleAccountServiceImpl simpleAccountService;
     @Autowired
-    private SimpleAccountServiceImpl1 simpleAccountService1;
+    private SimpleAccountServiceImpl simpleAccountService1;
 
     /**
      *1.没有事务实现转账
@@ -35,6 +36,6 @@ public class SimpleAccountTest {
      */
     @Test
     public void AccountTransactionTest(){
-        simpleAccountService1.transfer("8888","9999", 1000.0F);
+        simpleAccountService1.transfer("9999","8888", 1000.0F);
     }
 }
