@@ -10,7 +10,7 @@ import weiyu.pojo.Account;
 import weiyu.service.AccountService;
 
 /**
- * 事务控制一般都是控制在业务层。
+ * 1. 3.事务控制一般都是控制在业务层。
  */
 @Service
 public class SimpleAccountServiceImpl implements AccountService {
@@ -23,6 +23,7 @@ public class SimpleAccountServiceImpl implements AccountService {
         Account sAccount=accountDao.findByAccountNumber(sourceAccountNumber);
         Account tAccount=accountDao.findByAccountNumber(targetAccountNumber);
         sAccount.setBalance(sAccount.getBalance()-money);
+        //int i=1/0;
         tAccount.setBalance(tAccount.getBalance()+money);
         accountDao.updateAccountBalence(sAccount);
         accountDao.updateAccountBalence(tAccount);

@@ -9,9 +9,9 @@ package weiyu.service;
 public interface AccountService {
     /**
      *
-     * @param sourceAccountNumber
-     * @param targetAccountNumber
-     * @param money
+     * @param sourceAccountNumber 转出账户
+     * @param targetAccountNumber 转入账户
+     * @param money 转出金额
      */
     void transfer(String sourceAccountNumber,String targetAccountNumber,Float money);
 
