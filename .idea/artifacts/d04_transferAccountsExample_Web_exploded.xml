@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="d04_transferAccountsExample:Web exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/d04_transferAccountsExample_Web_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="d04_transferAccountsExample/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="d04_transferAccountsExample" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
